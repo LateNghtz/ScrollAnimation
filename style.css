@@ -12,7 +12,29 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 110vh;
+}
+
+#welcome {
+  font-size: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: #16223a;
+  border: #a08f60 solid 5px;
+  border-radius: 10%;
+  margin: 20px;
+}
+
+.dotted-box {
+  border: #ffffff dotted 5px;
+  padding: 20px;
+}
+
+.dotted-box h2 {
+  text-decoration: underline;
 }
 
 .hidden {
@@ -31,4 +53,18 @@ section {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.logos {
+  display: flex;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+.logo:nth-child(4) {
+  transition-delay: 600ms;
 }
